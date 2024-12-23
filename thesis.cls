@@ -266,7 +266,7 @@
 \newcommand\makedeclaration{
     \ifen   % Prints english version
         \chapter*{Statutory declaration}
-        I declare that I have authored this thesis independently, that I have not used other than the declared sources and that I have explicitly marked all material which has been quoted either literally or by content from the used sources. I also used the following generative AI tools [e.g. ChatGPT, Grammarly Go, Midjourney] for the following purpose: [Please state area of application here].
+        I declare that I have authored this thesis independently, that I have not used other than the declared sources and that I have explicitly marked all material which has been quoted either literally or by content from the used sources. I also used the following generative AI tools [e.g. ChatGPT, Gemini, DeepL, Grammarly Go, Midjourney] for the following purpose: [Please state area of application here].
     \else
         \chapter*{Eidesstattliche Erklärung}
         Ich erkläre an Eides statt, dass ich die vorliegende Arbeit selbstständig verfasst, andere als die angegebenen Quellen/Hilfsmittel nicht benutzt und die den benutzten Quellen wörtlich und inhaltlich entnommenen Stellen als solche kenntlich gemacht habe.  Für die Erstellung der Arbeit habe ich auch folgende Hilfsmittel generativer KI-Tools [z. B. ChatGPT, Grammarly Go, Midjourney] zu folgendem Zweck verwendet: [Bitte hier Einsatzgebiet anführen.].
@@ -362,8 +362,10 @@
     \printglossaries    % List used glossary entries
 
     \ifnatbib\bibliography{bibliography} % List bibliography entries with natbib
-    \else   \ifen\printbibliography[heading=bibintoc]
-            \else\printbibliography[heading=bibintoc, title=Literaturverzeichnis]\fi\fi
+    \else   \ifen\printbibliography[notkeyword={ai}, heading=bibintoc], \printbibliography[keyword={ai}, title={Listing of Prompts}]
+            \else\printbibliography[notkeyword={ai}, title=Literaturverzeichnis], \printbibliography[keyword={ai}, title={Listing of Prompts}]
+            \fi\fi
+
     
     \iftotalfigures\listoffigures\fi    % Figures
     \iftotaltables\listoftables\fi      % Tables
