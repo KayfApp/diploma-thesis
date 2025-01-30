@@ -1,5 +1,6 @@
 %!TEX root=./thesis.tex
 
+% ------------Nutzung von Inhalten aus dem Internet.------------------------------
 % Hier finden sich alle Referenzen aus Literatur und Internet, welche innerhalb der eigentlichen Arbeit verwendet wurden.
 % Zur einfachen Anwendung werden hier einige Beispiele gegeben.
 
@@ -10,15 +11,86 @@
 % - url:			Ein eindeutiger Link zur referenzierten Quelle, welcher im Optimalfall über mehrere Jahre hinweg verfügbar ist
 % - urldate:		Ebenfalls sollte das Datum des letzten Zugriffs angegeben sein
 % - date:			Ebenfalls sollte das Datum der Erstellung angegeben sein
-@online{ wiki:syt,
-	title = {Systemtechnik},
-	url = {https://de.wikipedia.org/wiki/Systemtechnik},
-	organization = {Wikipedia},
-	urldate = {2024-04-04}
-	date = {2023-12-03}
+@online{ SQLvsNoSQL,
+	title = {SQL vs NoSQL},
+	url = {https://www.mongodb.com/de-de/resources/basics/databases/nosql-explained/nosql-vs-sql},
+	organization = {MongoDB},
+	urldate = {2024-11-11}
+}
+@online{ Flask_JWT,
+	title = {Flask-JWT-Extended’s Documentation},
+	url = {https://flask-jwt-extended.readthedocs.io/en/stable/},
+	organization = {Flask},
+	urldate = {2024-11-19}
+}
+@online{ Bild_API,
+	title = {Bild: What ist an API?},
+	url = {https://voyager.postman.com/illustration/diagram-what-is-an-api-postman-illustration.svg},
+	organization = {Postman},
+	urldate = {2024-11-20}
+}
+@online{ FastAPIStart,
+	title = {The initial Commit of Fast API},
+	url = {https://github.com/fastapi/fastapi/commit/406c092a3bf65bbd4405ce87611a7e0b9c0ae706},
+	organization = {GitHub},
+	urldate = {2025-01-07}
+}
+@online{ IBMCompMariaDBAndPostgres,
+	title = {A Comparison of MariaDB and PostgreSQL},
+	url = {https://www.youtube.com/watch?v=btjBNKP49Rk},
+	organization = {YouTube},
+	urldate = {2025-01-07}
+}
+@online{ MariaDB,
+	title = {The Manufacturer Site of MariaDB},
+	url = {https://mariadb.org/de/},
+	organization = {MariaDB},
+	urldate = {2025-01-08}
+}
+@online{ PostgreSQL,
+	title = {The Manufacturer Site of PostgreSQL},
+	url = {https://www.postgresql.org/},
+	organization = {PostgreSQL},
+	urldate = {2025-01-09}
+}
+@online{ MSSQL,
+	title = {The Manufacturer Site of Microsoft SQL Server},
+	url = {https://www.microsoft.com/de-at/sql-server/sql-server-2019},
+	organization = {Microsoft},
+	urldate = {2025-01-09}
+}
+@online{ Flask,
+	title = {The Manufacturer Site of Flask},
+	url = {https://flask.palletsprojects.com/en/stable/},
+	organization = {Flask},
+	urldate = {2025-01-09}
+}
+@online{ FastAPI,
+	title = {The Manufacturer Site of FastAPI},
+	url = {https://fastapi.tiangolo.com/},
+	organization = {FastAPI},
+	urldate = {2025-01-09}
+}
+@online{ Django,
+	title = {The Manufacturer Site of Django},
+	url = {https://www.djangoproject.com/},
+	organization = {Django},
+	urldate = {2025-01-09}
+}
+@online{ PythonCode,
+	title = {Python Hello World compared to Java and C},
+	url = {https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijhz6yo_4m83Y4BS6gnJ12LRzvFSoDFSP45wXyBxISayDaM5rABSN7HMQ-hjoB2UEhBx5MoKIOh4hK79PXCvF968RjUMFG-5VXHn3d449uuDv-oqAaaoMA-B6C_rB6-3uRhwER3tW9pE9l/s0/Python+Code+Comparison.png},
+	urldate = {2025-01-10}
+}
+@online{ DBStat,
+	title = {Verteilung der beliebtesten Datenbankmanagementsysteme weltweit im Jahr 2024},
+	url = {https://de.statista.com/statistik/daten/studie/1404614/umfrage/weltweit-meist-genutze-datenbank-management-systeme/},
+	urldate = {2025-01-13}
 }
 
-% Nutzung von Inhalten eines Buchs.
+
+
+% ------------Nutzung von Inhalten eines Buchs.------------------------------
 % Bei Büchern gibt es einige Angaben, welche auf jeden Fall angegeben werden müssen:
 % - title: 		Der Vollständige Titel des Buchs
 % - author: 	Alle beteiligten Autoren
@@ -30,13 +102,207 @@
 % Optional sind auch folgende Parameter interessant:
 % - subtitle:	Falls Bücher sich etwa nur durch ihren Untertitel unterscheiden
 % - pagetotal:	Gesamte Anzahl der Seiten der verwendeten Quelle
-@book{ physik1,
-	title = {Physik 1},
-	author = {Schweitzer, Christian and Svoboda, Peter and Trieb, Lutz},
+
+@book{ DB_Systems,
+	title = {DATABASE SYSTEMS},
+	author = {Hector Garcia-Molina, Jeffrey D. Ullman, Jennifer Widom},
+	year = {2009},
+	subtitle = {The Complete Book},
+	edition = {2. Auflage},
+	publisher = {Pearson},
+	pages = {5-13,243-260,425-431},
+	pagetotal = {1203}
+}
+% https://people.inf.elte.hu/kiss/DB/ullman_the_complete_book.pdf
+
+@book{ DB_Fundaments,
+	title = {Fundaments of Database Systems},
+	author = {Ramez Elmasri, Shamkant B. Navathe},
+	year = {2003},
+	subtitle = {Fourth Edition},
+	edition = {4. Auflage},
+	publisher = {Pearson},
+	pages = {25-30,54-55},
+	pagetotal = {1009}
+}
+% https://library.uc.edu.kh/userfiles/pdf/7.Fundamentals%20of%20Database%20Systems.pdf
+
+@book{ DB_Introduction,
+	title = {An Introduction to Database Systems},
+	author = {C.J. Date},
+	year = {2004},
+	edition = {8. Auflage},
+	publisher = {Pearson},
+	pages = {25-30,54-55},
+	pagetotal = {}
+}
+%https://lc.fie.umich.mx/~rodrigo/BD/An%20Introduction%20to%20Database%20Systems%208e%20By%20C%20J%20Date.pdf
+
+@book{ DB_System_Concepts,
+	title = {DATABASE SYSTEM CONCEPTS},
+	author = {Abraham Silberschatz, Henry F. Korth, S. Sudarshan},
 	year = {2011},
-	subtitle = {Mechanik, Thermodynamik, Optik},
-	edition = {7. Auflage},
-	publisher = {Veritas},
-	pages = {140, 145-150},
-	pagetotal = {296}
+	edition = {6. Auflage},
+	publisher = {McGraw-Hill},
+	pages = {1123-1267},
+	pagetotal = {1315}
+}
+%https://people.vts.su.ac.rs/~peti/Baze%20podataka/Literatura/Silberschatz-Database%20System%20Concepts%206th%20ed.pdf
+
+@book{ MODERN_OPERATING_SYSTEMS,
+	title = {MODERN OPERATING SYSTEMS},
+	author = {ANDREW S. TANENBAUM,HERBERT BOS},
+	year = {2014},
+	edition = {4. Auflage},
+	publisher = {Pearson},
+	pages = {626-638},
+	pagetotal = {1101}
+}
+%https://os.ecci.ucr.ac.cr/slides/Andrew-S.-Tanenbaum-Modern-Operating-Systems.pdf
+
+@book{ RESTful_Web_Services,
+	title = {RESTful Web Services},
+	author = {Leonard Richardson, Sam Ruby},
+	year = {2007},
+	edition = {1. Auflage},
+	publisher = {O’Reilly},
+	pages = {},
+	pagetotal = {419}
+}
+%http://restfulwebapis.org/RESTful_Web_Services.pdf
+
+% ------------Nutzung von Inhalten eines Papers.------------------------------
+
+@misc{FAISS_paper,
+   abstract = {Vector databases typically manage large collections of
+    embedding vectors. Currently, AI applications are
+    growing rapidly, and so is the number of embeddings
+    that need to be stored and indexed. The Faiss library is
+    dedicated to vector similarity search, a core functionality of vector databases. Faiss is a toolkit of indexing
+    methods and related primitives used to search, cluster, compress and transform vectors. This paper describes the trade-off space of vector search and the design principles of Faiss in terms of structure, approach
+    to optimization and interfacing. We benchmark key
+    features of the library and discuss a few selected applications to highlight its broad applicability},
+   author = {Matthijs Douze, Alexandr Guzhva},
+   title = {THE FAISS LIBRARY},
+   url = {https://arxiv.org/pdf/2401.08281},
+}
+@misc{RelationalDataModel ,
+   abstract = {Future users of large data banks must be protected from
+    having to know how the data is organized in the machine (the
+    internal representation). A prompting service which supplies
+    such information is not a satisfactory solution. Activities of users
+    at terminals and most application programs should remain
+    unaffected when the internal representation of data is changed
+    and even when some aspects of the external representation
+    are changed. Changes in data representation will often be
+    needed as a result of changes in query, update, and report
+    traffic and natural growth in the types of stored information.
+    Existing noninferential, formatted data systems provide users
+    with tree-structured files or slightly more general network
+    models of the data. In Section 1, inadequacies of these models
+    are discussed. A model based on n-ary relations, a normal
+    form for data base relations, and the concept of a universal
+    data sublanguage are introduced. In Section 2, certain operations on relations (other than logical inference) are discussed
+    and applied to the problems of redundancy and consistency
+    in the user’s model.},
+   author = {E. F. CODD},
+   title = {A Relational Model of Data for Large Shared Data Banks},
+   url = {https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf},
+}
+
+@misc{InfoProtectionComputers,
+   abstract = {This tutorial paper explores the mechanics of protecting computer-stored information from unauthorized use or modification. It concentrates on those architectural structures--whether hardware or software--that are necessary to support information protection. The paper develops in three main sections. Section I describes desired functions, design principles, and examples of elementary protection and authentication mechanisms. Any reader familiar with computers should find the first section to be reasonably accessible. Section II requires some familiarity with descriptor-based computer architecture. It examines in depth the principles of modern protection architectures and the relation between capability systems and access control list systems, and ends with a brief analysis of protected subsystems and protected objects. The reader who is dismayed by either the prerequisites or the level of detail in the second section may wish to skip to Section III, which reviews the state of the art and current research projects and provides suggestions for further reading.},
+   author = {JEROME H. SALTZER, MICHAEL D. SCHROEDER},
+   title = {The Protection of Information in Computer Systems},
+   url = {https://www.cs.virginia.edu/~evans/cs551/saltzer/},
+}
+
+% ------------------- Nutzung von KI ------------------------------
+@misc{Text_über_DBMS,
+    author = {{Google}},
+    version = {Modell 1.5 Flash},
+    howpublished = {\url{https://gemini.google.com/}},
+    year = {2024},
+    note = {Accessed: 2024-11-12; Prompt: \enquote{Schreibe einen wissenschaftlichen Text über DBMS und geteilt über ddl dml dql dcl}},
+    keywords = {ai}
+}
+@misc{Geschichte_von_DB,
+    author = {{Google}},
+    version = {Modell 1.5 Flash},
+    howpublished = {\url{https://gemini.google.com/}},
+    year = {2024},
+    note = {Accessed: 2024-11-13; Prompt: \enquote{Schreibe einen wissenschaftlichen Text über die Geschichte von Datenbanken und warum sie für die IT relevant sind. Begründe die Aussagen mit wissenschaftlichen Quellen wie Papers, Herstellerseiten oder Fachbüchern.}},
+    keywords = {ai}
+}
+@misc{Quellen_Geschichte_von_DB,
+    author = {{Google}},
+    version = {Modell 1.5 Flash},
+    howpublished = {\url{https://gemini.google.com/}},
+    year = {2024},
+    note = {Accessed: 2024-11-13; Prompt: \enquote{Begründe jeden Absatz mit zumindest einer wissenschaftlichen Quellen wie Papers, Herstellerseiten oder Fachbüchern und der Seiten Stelle.}},
+    keywords = {ai}
+}
+@misc{PromptLoginSystemeUndAPIs,
+    author = {{Google}},
+    version = {Modell 1.5 Flash},
+    howpublished = {\url{https://gemini.google.com/}},
+    year = {2024},
+    note = {Accessed: 2024-11-19; Prompt: \enquote{Schreibe einen wissenschaftlichen Text über die Punkte: Seit wann gibt es Login Systeme und warum gibt es sie?, Was ist ein Login System?, Was sind APIs?, Backend Login APIs. Begründe jeden Absatz mit zumindest einer wissenschaftlichen Quellen wie Papers, Herstellerseiten oder Fachbüchern und der Seiten Stelle.}},
+    keywords = {ai}
+}
+@misc{FlaskAndAlter,
+    author = {{Google}},
+    version = {Modell 1.5 Flash},
+    howpublished = {\url{https://gemini.google.com/}},
+    year = {2024},
+    note = {Accessed: 2024-10-16; Prompt: \enquote{Was ist Flask und was gibt es für Alternativen?}},
+    keywords = {ai}
+}
+@misc{CompFlaskDjangoFastAPI,
+    author = {{Google}},
+    version = {Modell 1.5 Flash},
+    howpublished = {\url{https://gemini.google.com/}},
+    year = {2024},
+    note = {Accessed: 2024-10-16; Prompt: \enquote{Vergleiche Flask, Django und FastAPI in den Punkten Entwicklungszeit Benutzerfreundlichkeit Community-Support Flexibilität Dokumentation Skalierbarkeit}},
+    keywords = {ai}
+}
+@misc{3GoodDatabases,
+    author = {{Google}},
+    version = {Modell 1.5 Flash},
+    howpublished = {\url{https://gemini.google.com/}},
+    year = {2024},
+    note = {Accessed: 2024-10-16; Prompt: \enquote{3 Sinnvolle Datenbanken für ein Login System}},
+    keywords = {ai}
+}
+@misc{CompMariaDBPostrgesMSSQL,
+    author = {{Google}},
+    version = {Modell 1.5 Flash},
+    howpublished = {\url{https://gemini.google.com/}},
+    year = {2024},
+    note = {Accessed: 2024-10-16; Prompt: \enquote{Vergleiche MariaDB, PostgreSQL und Microsoft SQL Server in den Berreichen Lizenz, Geschwindigkeit, Entwicklungszeit, Community-Support, Integration, Dokumentation, Skalierbarkeit}},
+    keywords = {ai}
+}
+@misc{DecissionFramework,
+    author = {{OpenAI}},
+    version = {GPT 4o},
+    howpublished = {\url{https://chatgpt.com/}},
+    year = {2025},
+    note = {Accessed: 2025-01-07; Prompt: \enquote{Schreibe eine längere Entscheidungsgrundlage und schlage weitere Verbesserungen für den Text vor(Als Anhang der bestehende Teil der technischen Machbarkeit)}},
+    keywords = {ai}
+}
+@misc{DecissionDB,
+    author = {{OpenAI}},
+    version = {GPT 4o},
+    howpublished = {\url{https://chatgpt.com/}},
+    year = {2025},
+    note = {Accessed: 2025-01-07; Prompt: \enquote{Schreibe eine längere Entscheidungsgrundlage und schlage weitere Verbesserungen für den Text vor(Als Anhang der bestehende Teil der technischen Machbarkeit)}},
+    keywords = {ai}
+}
+@misc{SOTAPrompt,
+    author = {{OpenAI}},
+    version = {GPT 4o},
+    howpublished = {\url{https://chatgpt.com/}},
+    year = {2025},
+    note = {Accessed: 2025-01-07; Prompt: \enquote{Schreibe mir eine längere Einleitung welche auch bezug auf den Stand der Technik bezieht:(Als Anhang der bestehende Teil der Einleitung in den Vergleich der API Frameworks)}},
+    keywords = {ai}
 }
